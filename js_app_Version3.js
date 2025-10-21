@@ -8,9 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Activar pestaña por enlace
   function activateTab(name){
     sections.forEach(s => s.classList.toggle('active', s.id === name));
-    // actualizar url hash sin recargar
     history.replaceState(null, '', '#' + name);
-    // Colocar foco en el encabezado de la sección
     const heading = document.querySelector(`#${name} [id^="tab-"]`);
     if (heading) heading.focus();
   }
@@ -27,11 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Activar desde hash al cargar
   const initial = location.hash ? location.hash.substring(1) : 'inicio';
   activateTab(initial);
 
-  // Menu movil
+  // Menu móvil
   menuBtn.addEventListener('click', () => {
     const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
     menuBtn.setAttribute('aria-expanded', String(!expanded));
@@ -93,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Simular envío (aquí conecta con Formspree, Netlify Forms o tu backend)
       status.textContent = 'Enviando...';
       status.style.color = 'var(--muted)';
       setTimeout(() => {
