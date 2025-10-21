@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Centro de Rehabilitación — En Plenitud</title>
   <meta name="description" content="Centro de Rehabilitación - Tratamiento en Adicciones. Programa integral, equipo multidisciplinario y apoyo familiar." />
-  <link rel="stylesheet" href="ESTILOS.CSS" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#" class="brand" aria-label="Inicio - Centro En Plenitud">En Plenitud</a>
+      <a href="#inicio" class="brand" aria-label="Inicio - Centro En Plenitud">En Plenitud</a>
       <button id="btn-menu" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
       <nav id="main-nav" class="main-nav" role="navigation">
         <ul>
@@ -28,7 +28,7 @@
 
   <main id="app" class="container">
     <section id="inicio" class="tab active" role="region" aria-labelledby="tab-inicio">
-      <h1 id="tab-inicio">Centro de Rehabilitación — En Plenitud</h1>
+      <h1 id="tab-inicio" tabindex="-1">Centro de Rehabilitación — En Plenitud</h1>
       <p>Bienvenido. Ayudamos a las personas a recuperar su vida con programas integrales y apoyo familiar.</p>
       <p><a class="primary" href="#contacto" data-tab="contacto">Contacta ahora</a></p>
     </section>
@@ -56,13 +56,13 @@
     <section id="galeria" class="tab" role="region" aria-labelledby="tab-galeria">
       <h2 id="tab-galeria">Galería</h2>
       <div class="gallery" id="gallery">
-        <!-- Reemplaza estos divs por <img> con tus imágenes reales -->
+        <!-- Reemplaza estos bloques por <img src="ruta"> con tus imágenes reales -->
         <div class="photo" tabindex="0" data-src="images/foto1.jpg" aria-label="Foto 1">Foto 1</div>
         <div class="photo" tabindex="0" data-src="images/foto2.jpg" aria-label="Foto 2">Foto 2</div>
         <div class="photo" tabindex="0" data-src="images/foto3.jpg" aria-label="Foto 3">Foto 3</div>
       </div>
       <div id="lightbox" class="lightbox" hidden>
-        <button id="close-lightbox" class="close">✕</button>
+        <button id="close-lightbox" class="close" aria-label="Cerrar">✕</button>
         <img id="lightbox-img" alt="Foto ampliada" />
       </div>
     </section>
