@@ -1,1 +1,44 @@
-<!-- Archivo: index.html (colócalo en la raíz del repo) -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mi Sitio Web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a Mi Sitio Web</h1>
+    <p>Creado rápidamente por tu asistente.</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Sobre este sitio</h2>
+      <p>Este es un sitio estático minimalista. Edita <code>index.html</code>, <code>styles.css</code> y <code>script.js</code> para personalizarlo.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contacto</h2>
+      <form id="contact-form">
+        <label>
+          Nombre
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Mensaje
+          <textarea name="message" required></textarea>
+        </label>
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="result" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Tu nombre</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
