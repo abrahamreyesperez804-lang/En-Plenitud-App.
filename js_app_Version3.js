@@ -1,0 +1,1 @@
+// Archivo: js/app.js (coloca esta ruta exactamente; crea la carpeta js si no existe)
