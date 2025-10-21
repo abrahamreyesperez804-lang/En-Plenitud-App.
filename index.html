@@ -3,148 +3,99 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Centro de Rehabilitación — Inicio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Centro de Rehabilitación — En Plenitud</title>
+  <meta name="description" content="Centro de Rehabilitación - Tratamiento en Adicciones. Programa integral, equipo multidisciplinario y apoyo familiar." />
+  <link rel="stylesheet" href="ESTILOS.CSS" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">
-        <div class="logo">CR</div>
-        <div>
-          <h1>Centro de Rehabilitación</h1>
-          <p class="tag">En plenitud A.C.</p>
-        </div>
-      </div>
-      <nav class="nav-main" aria-label="Principal">
-        <button class="tab-btn active" data-target="inicio">Inicio</button>
-        <button class="tab-btn" data-target="servicios">Servicios</button>
-        <button class="tab-btn" data-target="terapias">Terapias</button>
-        <button class="tab-btn" data-target="equipo">Equipo</button>
-        <button class="tab-btn" data-target="testimonios">Testimonios</button>
-        <button class="tab-btn" data-target="galeria">Galería</button>
-        <button class="tab-btn" data-target="contacto">Contacto</button>
+      <a href="#" class="brand" aria-label="Inicio - Centro En Plenitud">En Plenitud</a>
+      <button id="btn-menu" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav id="main-nav" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="#inicio" data-tab="inicio">Inicio</a></li>
+          <li><a href="#servicios" data-tab="servicios">Servicios</a></li>
+          <li><a href="#programas" data-tab="programas">Programas</a></li>
+          <li><a href="#equipo" data-tab="equipo">Equipo</a></li>
+          <li><a href="#galeria" data-tab="galeria">Galería</a></li>
+          <li><a href="#testimonios" data-tab="testimonios">Testimonios</a></li>
+          <li><a href="#contacto" data-tab="contacto">Contacto</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container main-content">
-    <section id="inicio" class="tab-panel active" role="region" aria-labelledby="Inicio">
-      <div class="hero">
-        <h2>Bienvenido</h2>
-        <p>Servicios especializados para apoyar tu recuperación física y emocional. Atención humana y profesional.</p>
-        <div class="cta-row">
-          <a class="btn primary" href="#" onclick="document.querySelector('[data-target=&quot;contacto&quot;]').click();return false;">Contáctanos</a>
-          <a class="btn ghost" href="#galeria" onclick="document.querySelector('[data-target=&quot;galeria&quot;]').click();return false;">Ver galería</a>
-        </div>
-      </div>
+  <main id="app" class="container">
+    <section id="inicio" class="tab active" role="region" aria-labelledby="tab-inicio">
+      <h1 id="tab-inicio">Centro de Rehabilitación — En Plenitud</h1>
+      <p>Bienvenido. Ayudamos a las personas a recuperar su vida con programas integrales y apoyo familiar.</p>
+      <p><a class="primary" href="#contacto" data-tab="contacto">Contacta ahora</a></p>
     </section>
 
-    <section id="servicios" class="tab-panel" role="region">
-      <h3>Servicios</h3>
-      <div class="cards">
-        <article class="card">
-          <div class="card-icon">🩺</div>
-          <h4>Evaluación integral</h4>
-          <p>Valoración inicial por profesionales para diseñar tu plan de rehabilitación.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">🏋️‍♀️</div>
-          <h4>Rehabilitación física</h4>
-          <p>Programas personalizados para recuperación funcional y movilidad.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">🌊</div>
-          <h4>Hidroterapia</h4>
-          <p>Terapia acuática dirigida por especialistas para reducir impacto y mejorar control motor.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="terapias" class="tab-panel" role="region">
-      <h3>Terapias</h3>
-      <ul class="list">
-        <li><strong>Fisioterapia</strong> – Tratamientos y ejercicios guiados para movimiento y fuerza.</li>
-        <li><strong>Terapia ocupacional</strong> – Recupera habilidades para la vida diaria.</li>
-        <li><strong>Electroterapia</strong> – Soporte para el manejo del dolor y la estimulación muscular.</li>
+    <section id="servicios" class="tab" role="region" aria-labelledby="tab-servicios">
+      <h2 id="tab-servicios">Servicios</h2>
+      <ul>
+        <li>Evaluación y diagnóstico</li>
+        <li>Terapia individual y grupal</li>
+        <li>Programas de desintoxicación y seguimiento</li>
+        <li>Reintegración familiar y laboral</li>
       </ul>
     </section>
 
-    <section id="equipo" class="tab-panel" role="region">
-      <h3>Equipo</h3>
-      <p>Nuestro equipo está formado por médicos, fisioterapeutas, terapeutas ocupacionales y psicólogos con experiencia.</p>
-      <div class="people">
-        <div class="person">
-          <div class="avatar">MA</div>
-          <div>
-            <strong>Dr. Mario Álvarez</strong>
-            <p>Director médico</p>
-          </div>
-        </div>
-        <div class="person">
-          <div class="avatar">LC</div>
-          <div>
-            <strong>Lic. Laura Cruz</strong>
-            <p>Fisioterapeuta</p>
-          </div>
-        </div>
+    <section id="programas" class="tab" role="region" aria-labelledby="tab-programas">
+      <h2 id="tab-programas">Programas</h2>
+      <p>Contamos con programas residenciales y ambulatorios adaptados a cada caso.</p>
+    </section>
+
+    <section id="equipo" class="tab" role="region" aria-labelledby="tab-equipo">
+      <h2 id="tab-equipo">Equipo</h2>
+      <p>Psicólogos, psiquiatras, terapeutas ocupacionales y personal de apoyo formados para acompañar el proceso.</p>
+    </section>
+
+    <section id="galeria" class="tab" role="region" aria-labelledby="tab-galeria">
+      <h2 id="tab-galeria">Galería</h2>
+      <div class="gallery" id="gallery">
+        <!-- Reemplaza estos divs por <img> con tus imágenes reales -->
+        <div class="photo" tabindex="0" data-src="images/foto1.jpg" aria-label="Foto 1">Foto 1</div>
+        <div class="photo" tabindex="0" data-src="images/foto2.jpg" aria-label="Foto 2">Foto 2</div>
+        <div class="photo" tabindex="0" data-src="images/foto3.jpg" aria-label="Foto 3">Foto 3</div>
+      </div>
+      <div id="lightbox" class="lightbox" hidden>
+        <button id="close-lightbox" class="close">✕</button>
+        <img id="lightbox-img" alt="Foto ampliada" />
       </div>
     </section>
 
-    <section id="testimonios" class="tab-panel" role="region">
-      <h3>Testimonios</h3>
-      <div class="testimonios">
-        <blockquote>
-          “Con el apoyo del equipo recuperé la movilidad y mejoró mi calidad de vida.”<cite> — Ana P.</cite>
-        </blockquote>
-        <blockquote>
-          “Atención profesional, muy recomendables.”<cite> — Carlos R.</cite>
-        </blockquote>
-      </div>
+    <section id="testimonios" class="tab" role="region" aria-labelledby="tab-testimonios">
+      <h2 id="tab-testimonios">Testimonios</h2>
+      <blockquote>
+        <p>"La atención me ayudó a recuperar mi familia y mi trabajo." — A.</p>
+      </blockquote>
     </section>
 
-    <section id="galeria" class="tab-panel" role="region">
-      <h3>Galería</h3>
-      <div class="grid">
-        <div class="photo">Foto 1</div>
-        <div class="photo">Foto 2</div>
-        <div class="photo">Foto 3</div>
-        <div class="photo">Foto 4</div>
-      </div>
-    </section>
+    <section id="contacto" class="tab" role="region" aria-labelledby="tab-contacto">
+      <h2 id="tab-contacto">Contacto</h2>
+      <form id="contact-form" action="#" novalidate>
+        <label for="name">Nombre</label>
+        <input id="name" name="name" type="text" required />
 
-    <section id="contacto" class="tab-panel" role="region">
-      <h3>Contacto</h3>
-      <div class="contact-grid">
-        <form id="contactForm" class="contact-form" onsubmit="submitContact(event)">
-          <label>Nombre
-            <input type="text" name="name" required>
-          </label>
-          <label>Correo
-            <input type="email" name="email" required>
-          </label>
-          <label>Mensaje
-            <textarea name="message" rows="4" required></textarea>
-          </label>
-          <div class="form-actions">
-            <button class="btn primary" type="submit">Enviar</button>
-            <button class="btn ghost" type="button" onclick="document.getElementById('contactForm').reset()">Limpiar</button>
-          </div>
-        </form>
-        <div class="contact-card">
-          <h4>Datos</h4>
-          <p>Dirección: Calle Ejemplo 123</p>
-          <p>Teléfono: +52 55 1234 5678</p>
-          <p>Correo: info@rehabilitacion.mx</p>
-        </div>
-      </div>
+        <label for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="primary">Enviar</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Centro de Rehabilitación — En plenitud A.C. • Hecho con ❤️</p>
+      <p>© <span id="year"></span> Centro En Plenitud — Todos los derechos reservados.</p>
+      <p><a href="#politica">Política de privacidad</a></p>
     </div>
   </footer>
 
