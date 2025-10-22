@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Centro de Rehabilitación — En Plenitud</title>
+  <meta name="description" content="Centro de Rehabilitación - Tratamiento en Adicciones. Programa integral, equipo multidisciplinario y apoyo familiar.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Inicio - Centro En Plenitud">En Plenitud</a>
+  <button id="btn-menu" class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">☰</button>
+  <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="#inicio" data-tab="inicio">Inicio</a></li>
+          <li><a href="#servicios" data-tab="servicios">Servicios</a></li>
+          <li><a href="#programas" data-tab="programas">Programas</a></li>
+          <li><a href="#equipo" data-tab="equipo">Equipo</a></li>
+          <li><a href="#galeria" data-tab="galeria">Galería</a></li>
+          <li><a href="#testimonios" data-tab="testimonios">Testimonios</a></li>
+          <li><a href="#contacto" data-tab="contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="container">
+  <section id="inicio" class="tab active" aria-labelledby="tab-inicio">
+      <h1 id="tab-inicio" tabindex="-1">Centro de Rehabilitación — En Plenitud</h1>
+      <p>Bienvenido. Ayudamos a las personas a recuperar su vida con programas integrales y apoyo familiar.</p>
+      <p><a class="primary" href="#contacto" data-tab="contacto">Contacta ahora</a></p>
+    </section>
+
+  <section id="servicios" class="tab" aria-labelledby="tab-servicios">
+      <h2 id="tab-servicios">Servicios</h2>
+      <ul>
+        <li>Evaluación y diagnóstico</li>
+        <li>Terapia individual y grupal</li>
+        <li>Programas de desintoxicación y seguimiento</li>
+        <li>Reintegración familiar y laboral</li>
+      </ul>
+    </section>
+
+  <section id="programas" class="tab" aria-labelledby="tab-programas">
+      <h2 id="tab-programas">Programas</h2>
+      <p>Contamos con programas residenciales y ambulatorios adaptados a cada caso.</p>
+    </section>
+
+  <section id="equipo" class="tab" aria-labelledby="tab-equipo">
+      <h2 id="tab-equipo">Equipo</h2>
+      <p>Psicólogos, psiquiatras, terapeutas ocupacionales y personal de apoyo formados para acompañar el proceso.</p>
+    </section>
+
+  <section id="galeria" class="tab" aria-labelledby="tab-galeria">
+      <h2 id="tab-galeria">Galería</h2>
+      <div class="gallery" id="gallery">
+        <!-- Reemplaza estos bloques por <img src="ruta"> con tus imágenes reales -->
+        <div class="photo" tabindex="0" data-src="images/foto1.jpg" aria-label="Foto 1">Foto 1</div>
+        <div class="photo" tabindex="0" data-src="images/foto2.jpg" aria-label="Foto 2">Foto 2</div>
+        <div class="photo" tabindex="0" data-src="images/foto3.jpg" aria-label="Foto 3">Foto 3</div>
+      </div>
+      <div id="lightbox" class="lightbox" hidden>
+        <button id="close-lightbox" class="close" type="button" aria-label="Cerrar">✕</button>
+        <img id="lightbox-img" alt="Foto ampliada" src="images/foto1.jpg">
+      </div>
+    </section>
+
+  <section id="testimonios" class="tab" aria-labelledby="tab-testimonios">
+      <h2 id="tab-testimonios">Testimonios</h2>
+      <blockquote>
+        <p>"La atención me ayudó a recuperar mi familia y mi trabajo." — A.</p>
+      </blockquote>
+    </section>
+
+  <section id="contacto" class="tab" aria-labelledby="tab-contacto">
+      <h2 id="tab-contacto">Contacto</h2>
+  <form id="contact-form" action="#" novalidate>
+  <label for="name">Nombre</label>
+  <input id="name" name="name" type="text" required>
+
+  <label for="email">Correo electrónico</label>
+  <input id="email" name="email" type="email" required>
+
+  <label for="message">Mensaje</label>
+  <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="primary">Enviar</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer id="politica" class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Centro En Plenitud — Todos los derechos reservados.</p>
+      <p><a href="#politica">Política de privacidad</a></p>
+    </div>
+  </footer>
+
+  <script src="js_app_Version3.js"></script>
+</body>
+</html>
