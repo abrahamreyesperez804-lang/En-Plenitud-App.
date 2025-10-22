@@ -49,3 +49,12 @@ jobs:
           sleep 2
           npm run a11y
           npm run a11y:axe
+      - name: Upload a11y reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: a11y-reports
+          path: |
+            axe-report.json
+            pa11y-report.html
+            pa11y-report.json
