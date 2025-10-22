@@ -1,0 +1,34 @@
+Starting up http-server, serving .
+
+http-server version: 14.1.1
+
+http-server settings: 
+CORS: disabled
+Cache: -1 seconds
+Connection Timeout: 120 seconds
+Directory Listings: visible
+AutoIndex: visible
+Serve GZIP Files: false
+Serve Brotli Files: false
+Default File Extension: none
+
+Available on:
+  http://127.0.0.1:8080
+  http://10.0.3.202:8080
+Hit CTRL-C to stop the server
+
+[2025-10-22T05:17:16.402Z]  "GET /" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/91.0.4469.0 Safari/537.36"
+(node:3578) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2025-10-22T05:17:16.529Z]  "GET /styles.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/91.0.4469.0 Safari/537.36"
+[2025-10-22T05:17:16.531Z]  "GET /images/foto1.jpg" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/91.0.4469.0 Safari/537.36"
+[2025-10-22T05:17:16.535Z]  "GET /js_app_Version3.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/91.0.4469.0 Safari/537.36"
+[2025-10-22T05:17:28.410Z]  "GET /" "pa11y/6.2.3"
+[2025-10-22T05:17:28.426Z]  "GET /styles.css" "pa11y/6.2.3"
+[2025-10-22T05:17:28.428Z]  "GET /images/foto1.jpg" "pa11y/6.2.3"
+[2025-10-22T05:17:28.430Z]  "GET /js_app_Version3.js" "pa11y/6.2.3"
+[2025-10-22T05:18:20.232Z]  "GET /" "pa11y/6.2.3"
+[2025-10-22T05:18:20.250Z]  "GET /styles.css" "pa11y/6.2.3"
+[2025-10-22T05:18:20.252Z]  "GET /images/foto1.jpg" "pa11y/6.2.3"
+[2025-10-22T05:18:20.255Z]  "GET /js_app_Version3.js" "pa11y/6.2.3"
+http-server stopped.

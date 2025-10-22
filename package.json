@@ -7,11 +7,14 @@
     "quality-checks": "node scripts/quality-checks.js",
     "lint:html": "html-validate ./index.html",
     "start": "http-server . -p 8080 -c-1",
-    "a11y": "pa11y http://localhost:8080"
+    "a11y": "pa11y http://localhost:8080",
+    "a11y:axe": "node scripts/axe-run.js"
   },
   "devDependencies": {
     "html-validate": "^8.0.0",
     "pa11y": "^6.0.0",
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "@axe-core/cli": "^4.10.0",
+    "axe-core": "^4.7.3"
   }
 }

@@ -2,7 +2,9 @@ const fs = require('fs');
 const path = require('path');
 
 const htmlPath = path.resolve(__dirname, '..', 'index.html');
-const html = fs.readFileSync(htmlPath, 'utf8');
+let html = fs.readFileSync(htmlPath, 'utf8');
+// Remove HTML comments to avoid false positives (e.g. <!-- <img src="ruta"> -->)
+html = html.replace(/<!--([\s\S]*?)-->/g, '');
 
 let errors = [];
 
