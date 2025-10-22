@@ -1,0 +1,17 @@
+{
+  "name": "en-plenitud-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "check-links": "node scripts/verify-links.js",
+    "quality-checks": "node scripts/quality-checks.js",
+    "lint:html": "html-validate ./index.html",
+    "start": "http-server . -p 8080 -c-1",
+    "a11y": "pa11y http://localhost:8080"
+  },
+  "devDependencies": {
+    "html-validate": "^8.0.0",
+    "pa11y": "^6.0.0",
+    "http-server": "^14.1.1"
+  }
+}
