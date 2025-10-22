@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "check-links": "node scripts/verify-links.js"
+    "check-links": "node scripts/verify-links.js",
+    "quality-checks": "node scripts/quality-checks.js"
   }
 }
