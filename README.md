@@ -1,7 +1,9 @@
 # En-Plenitud-App.
 Centro de rehabilitación — tratamiento en adicciones
 
-![CI](https://github.com/abrahamreyesperez804-lang/En-Plenitud-App./actions/workflows/check-links.yml/badge.svg)
+Publicada en: https://abrahamreyesperez804-lang.github.io/En-Plenitud-App./
+
+![CI](https://github.com/abrahamreyesperez804-lang/En-Plenitud-App/actions/workflows/check-links.yml/badge.svg)
 
 ## Resumen
 
@@ -77,3 +79,5 @@ Los comandos anteriores están enlazados a los scripts definidos en `package.jso
 
 - Si el badge CI no se muestra correctamente revisa la ruta del workflow en `.github/workflows/check-links.yml`.
 - El repositorio incluye scripts en `scripts/` para verificación local y generación de informes de accesibilidad.
+
+Nota: si renombras el repositorio para quitar el punto final (`En-Plenitud-App.` → `En-Plenitud-App`), actualiza el badge en este README eliminando el punto final en la URL del badge (las redirecciones de GitHub suelen mantener los enlaces, pero es más limpio actualizarlo).
