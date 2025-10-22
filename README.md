@@ -3,6 +3,10 @@ Centro De Rehabilitación Tratamiento En Adicciones
 ![CI](https://github.com/abrahamreyesperez804-lang/En-Plenitud-App./actions/workflows/check-links.yml/badge.svg)
 
 [README-web_Version4.md](https://github.com/user-attachments/files/23020352/README-web_Version4.md)
+ 
+## Release v0.1.0
+
+Primera versión publicada con comprobaciones automáticas de accesibilidad (Pa11y + axe-core), verificación de enlaces y placeholder SVG para la galería. Puedes encontrar el tag `v0.1.0` en el repositorio.
 ```markdown
 # Centro de Rehabilitación — Web (7 pestañas)
 
