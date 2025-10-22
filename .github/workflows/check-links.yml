@@ -53,8 +53,13 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: a11y-reports
+          name: a11y-reports-${{ github.run_id }}
           path: |
             axe-report.json
             pa11y-report.html
             pa11y-report.json
+      - name: Rename reports with run info (if present)
+        if: always()
+        run: |
+          if [ -f axe-report.json ]; then mv axe-report.json axe-report-${{ github.run_id }}.json || true; fi
+          if [ -f pa11y-report.html ]; then mv pa11y-report.html pa11y-report-${{ github.run_id }}.html || true; fi
