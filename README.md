@@ -6,14 +6,16 @@ Centro De Rehabilitación Tratamiento En Adicciones
 
 Contenido:
 - index.html
-- css/styles.css
-- js/app.js
+- styles.css
+- js_app_Version3.js
 
 Cómo usar (local):
-1) Crea una carpeta para la web y copia los archivos arriba en la estructura:
+1) Crea una carpeta para la web y copia los archivos arriba en la estructura, o clona este repo:
    /index.html
-   /css/styles.css
-   /js/app.js
+   /styles.css
+   /js_app_Version3.js
+
+Nota: históricamente el proyecto usaba `css/styles.css` y `js/app.js`; la copia actual del repo mantiene `styles.css` y `js_app_Version3.js`. Si prefieres mantener la convención `css/` y `js/`, puedes mover/renombrar los archivos o actualizar `index.html` según convenga.
 
 2) Abre index.html en tu navegador: doble clic o arrastra al navegador. No requiere servidor para funcionar (SPA simple).
    Para desarrollo con servidor (mejor experiencia):
