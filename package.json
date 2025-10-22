@@ -6,6 +6,7 @@
     "check-links": "node scripts/verify-links.js",
     "quality-checks": "node scripts/quality-checks.js",
     "lint:html": "html-validate ./index.html",
+    "deploy": "gh-pages -d . -b gh-pages",
     "start": "http-server . -p 8080 -c-1",
     "a11y": "pa11y http://localhost:8080",
     "a11y:axe": "node scripts/axe-run.js"
@@ -14,6 +15,7 @@
     "html-validate": "^8.0.0",
     "pa11y": "^6.0.0",
     "http-server": "^14.1.1",
+    "gh-pages": "^5.0.0",
     "@axe-core/cli": "^4.10.0",
     "axe-core": "^4.7.3"
   }
