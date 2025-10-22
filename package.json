@@ -1,0 +1,8 @@
+{
+  "name": "en-plenitud-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "check-links": "node scripts/verify-links.js"
+  }
+}

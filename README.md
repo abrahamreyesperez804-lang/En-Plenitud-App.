@@ -31,3 +31,14 @@ Personalizaciones recomendadas:
 - Cambia textos, logos, colores en css/styles.css (variables :root).
 - Reemplaza las fotos de la galería por imágenes reales (sustituye los div.photo por <img>).
 - Si deseas formularios funcionales conecta a un servicio (Formspree, Netlify Forms, o tu backend).
+
+Verificador de enlaces
+----------------------
+
+Se añadió un script de verificación que comprueba que los archivos referenciados en `index.html` existen (href, src, data-src). Úsalo desde la raíz del proyecto:
+
+```bash
+npm run check-links
+```
+
+El comando imprimirá los archivos faltantes o `OK` si todas las referencias existen.
