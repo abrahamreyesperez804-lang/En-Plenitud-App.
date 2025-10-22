@@ -122,6 +122,7 @@ button.primary{border:0;cursor:pointer}
   padding:2rem;
   z-index:50;
 }
+.lightbox[hidden]{display:none}
 .lightbox img{max-width:90%;max-height:80%;border-radius:8px}
 .close{position:absolute;right:1rem;top:1rem;background:#fff;border-radius:50%;border:0;padding:0.5rem;cursor:pointer}
 
